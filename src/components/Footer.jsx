@@ -16,7 +16,7 @@ function Footerbottom() {
         <Box display="flex" alignItems="center">
           <Heading size="md">
             <Box textAlign="center" p="5" color="#f1f1f1">
-              © 2021 Realtor, Inc.
+              © 2021 Estatery, Inc.
             </Box>
           </Heading>
         </Box>
@@ -66,6 +66,8 @@ function Footerbottom() {
               </ListItem>
             </List>
           </Box>
+
+          
         </Box>
 
         {/* follow and app icons */}
@@ -130,17 +132,14 @@ function Footerbottom() {
         {/* bottom links */}
         <Box d="flex" mt="20">
           {" "}
-          <Link mr="5" fontSize="sm">
+          <Link mr="5" fontSize="sm" href="https://www.reunionhq.in/terms-and-conditions">
             Terms of Service
           </Link>
-          <Link mr="5" fontSize="sm">
+          <Link mr="5" fontSize="sm" href="https://www.reunionhq.in/privacy-policy">
             Privacy Policy
           </Link>
-          <Link mr="5" fontSize="sm">
+          <Link mr="5" fontSize="sm" href="https://www.reunionhq.in/cookies-policy">
             Cookie Policy
-          </Link>
-          <Link mr="5" fontSize="sm">
-            Help
           </Link>
         </Box>
       </Container>

@@ -9,8 +9,8 @@ import {
   Spacer,
   Link,
 } from "@chakra-ui/react";
-import { FcMenu, FcHome, FcAbout } from "react-icons/fc";
-import { BsSearch } from "react-icons/bs";
+import { FcMenu, FcHome } from "react-icons/fc";
+import { BsSearch, BsFillPersonPlusFill } from "react-icons/bs";
 import { CgLogIn } from "react-icons/cg";
 
 const Navbar = () => {
@@ -35,13 +35,13 @@ const Navbar = () => {
               <MenuItem icon={<FcHome />}>Home</MenuItem>
             </Link>
             <Link href="/search" passHref>
-              <MenuItem icon={<BsSearch />}>Search</MenuItem>
-            </Link>
-            <Link href="/search" passHref>
-              <MenuItem icon={<FcAbout />}>Buy Property</MenuItem>
+              <MenuItem icon={<BsSearch />}>Search Property</MenuItem>
             </Link>
             <Link href="/login" passHref>
               <MenuItem icon={<CgLogIn />}>Login</MenuItem>
+            </Link>
+            <Link href="/signup" passHref>
+              <MenuItem icon={<BsFillPersonPlusFill />}>Sign Up</MenuItem>
             </Link>
             
           </MenuList>

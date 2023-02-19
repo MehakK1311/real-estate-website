@@ -7,24 +7,26 @@ import {
   ListItem,
   Link,
   Flex,
+  Text
 } from "@chakra-ui/react";
 
 function Footerbottom() {
   return (
-    <Box mt={5} color="#ffffff" background="#212121" py="10">
+    <Box mt={1} color="#ffffff" background="#212121" py="20">
       <Container maxWidth="container.xl">
         <Box display="flex" alignItems="center">
           <Heading size="md">
-            <Box textAlign="center" p="5" color="#f1f1f1">
+            <Box textAlign="center" p="2" color="#f1f1f1">
               © 2021 Estatery, Inc.
             </Box>
           </Heading>
         </Box>
-        <Divider my="10" />
+        <Divider mt="10" mb="10" />
+        <Text mb="10" fontSize='sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eum atque consequuntur alias impedit temporibus, laboriosam architecto fugiat nulla ullam quis quae ducimus itaque vero porro quam nam recusandae officia corrupti, iure ea. Distinctio, eveniet fuga odio mollitia rerum a saepe vel aliquam consequuntur eos explicabo harum nemo perspiciatis, earum asperiores libero natus facere dolores illo quasi. Quasi aut placeat eveniet quaerat enim nemo, voluptatum et at soluta molestias illo molestiae. Ratione earum quis deserunt est error hic. Nam corporis voluptas non laboriosam eveniet. Quasi libero porro totam distinctio odit, ad, dignissimos dicta enim quos hic fugit accusamus! Beatae, quasi!</Text>
         <Box display="flex" alignItems="top">
           <Box flex="1">
             <Heading size="sm">Your Account</Heading>
-            <List mt="4" spacing={2}>
+            <List mt="7" spacing={2}>
               <ListItem>
                 <Link color="#A2A2A2" href="#">
                   Sign up
@@ -45,7 +47,7 @@ function Footerbottom() {
 
           <Box flex="1">
             <Heading size="sm">Quick Links</Heading>
-            <List mt="4" spacing={2}>
+            <List mt="7" spacing={2}>
               <ListItem>
                 <Link color="#A2A2A2" href="https://www.reunionhq.in/about">
                   About
@@ -71,7 +73,7 @@ function Footerbottom() {
         </Box>
 
         {/* follow and app icons */}
-        <Box mt="15" d="flex" justifyContent="space-between">
+        <Box mt="10" d="flex" justifyContent="space-between">
           <Box d="flex">
             <Flex flexDirection="column">
               <Box mb="2">Follow us</Box>
@@ -130,7 +132,7 @@ function Footerbottom() {
         </Box>
 
         {/* bottom links */}
-        <Box d="flex" mt="20">
+        <Box d="flex" mt="10">
           {" "}
           <Link mr="5" fontSize="sm" href="https://www.reunionhq.in/terms-and-conditions">
             Terms of Service

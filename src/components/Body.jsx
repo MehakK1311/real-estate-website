@@ -1,26 +1,22 @@
-import MOCK_DATA from "../utils/MOCK_DATA.json";
 import SMALL_DATA from "../utils/SMALL_DATA.json";
 import Property from "./Property";
-import { Flex, Button, Select } from "@chakra-ui/react";
-import { useState } from "react";
+import { Flex } from "@chakra-ui/react";
 
 const Body = () => {
   return (
-    <>
-      <Flex flexWrap="wrap" justifyContent="center" alignItems="center">
-        {SMALL_DATA.map((data, index) => (
-          <Property
-            coverPhoto={data.img_url}
-            price={data.price}
-            rooms={data.beds}
-            title={data.name}
-            baths={data.bathrooms}
-            contact={data.contact}
-            key={index}
-          />
-        ))}
-      </Flex>
-    </>
+    <Flex flexWrap="wrap" justifyContent="center" alignItems="center">
+      {SMALL_DATA.map((data, index) => (
+        <Property
+          coverPhoto={data.img_url}
+          price={data.price}
+          rooms={data.beds}
+          title={data.name}
+          baths={data.bathrooms}
+          contact={data.contact}
+          key={index}
+        />
+      ))}
+    </Flex>
   );
 };
 

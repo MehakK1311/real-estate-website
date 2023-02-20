@@ -1,12 +1,10 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Layout from "../Layout/Main";
 import Banner from "../components/Banner";
-
 import Body from "../components/Body";
 const Home = () => {
   return (
-    <div>
-      <Navbar />
+    <Layout>
+      
       <Banner
         purpose="BUY A HOME"
         title1=" Find, Buy & Own Your"
@@ -18,8 +16,7 @@ const Home = () => {
         imageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008"
       />
       <Body />
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 

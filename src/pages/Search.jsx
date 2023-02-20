@@ -1,17 +1,12 @@
-import Searchbar from "../components/Searchbar";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-
-const Search = () => {
-  
-
+import Layout from "../Layout/Main";
+import Searchbar from"../components/Searchbar";
+import Body from "../components/Body";
+const Home = () => {
   return (
-    <div>
-      <Navbar />
-      <Searchbar/>
-      <Footer />
-    </div>
+    <Layout>
+        <Searchbar/>
+    </Layout>
   );
 };
 
-export default Search;
+export default Home;
